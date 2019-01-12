@@ -1,0 +1,13 @@
+{
+  "name": "@woken/tsconfig",
+  "version": "0.0.1",
+  "description": "Shared config for my projects",
+  "license": "MIT",
+  "author": {
+    "email": "hi@lux.moe",
+    "name": "Lux Pandora"
+  },
+  "files": [
+    "tsconfig.json"
+  ]
+}

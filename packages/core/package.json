@@ -1,0 +1,24 @@
+{
+  "name": "@woken/core",
+  "version": "0.0.1",
+  "description": "core",
+  "license": "MIT",
+  "author": {
+    "email": "hi@lux.moe",
+    "name": "Lux Pandora"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "del dist"
+  },
+  "files": [
+    "dist/"
+  ],
+  "devDependencies": {
+    "@luxizzle/tsconfig": "^0.0.1",
+    "del": "^3.0.0",
+    "typescript": "^3.2.2"
+  }
+}
