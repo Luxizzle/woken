@@ -10,8 +10,10 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "npm run clean && tsc",
-    "clean": "del dist"
+    "prepublish": "npm run build",
+    "build": "npm run clean && npm run tsc",
+    "clean": "del dist",
+    "tsc": "tsc"
   },
   "publishConfig": {
     "access": "public"
