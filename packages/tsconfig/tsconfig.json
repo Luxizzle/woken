@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "commonjs",
-    "noLib": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "sourceMap": true,
@@ -21,7 +20,6 @@
     "skipLibCheck": true,
     "jsx": "react",
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "lib": ["es2016"]
+    "emitDecoratorMetadata": true
   }
 }

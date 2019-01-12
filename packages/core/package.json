@@ -11,8 +11,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "npm run clean && npm run tsc",
-    "clean": "del dist",
+    "build": "npm run tsc",
     "tsc": "tsc"
   },
   "publishConfig": {
@@ -23,7 +22,6 @@
   ],
   "devDependencies": {
     "@woken/tsconfig": "^0.0.2-alpha.5",
-    "del": "^3.0.0",
     "typescript": "^3.2.2"
   },
   "gitHead": "283a3e50964b41b00dac72d507489bdce9326047"

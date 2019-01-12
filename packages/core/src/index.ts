@@ -1,1 +1,3 @@
-console.log('test edit more moooore');
+export default function() {
+  console.log('test edit more moooore');
+}

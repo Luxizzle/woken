@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@woken/tsconfig@^0.0.2-alpha.5":
-  version "0.0.2-alpha.5"
-  resolved "https://registry.yarnpkg.com/@woken/tsconfig/-/tsconfig-0.0.2-alpha.5.tgz#aed313864cc78d7209d8674e9614c7f100c3c1ce"
-  integrity sha512-JMw17gqiL6Dg+q6YK2s09JVXv8CYIG0wfoXN1zRZXu70w8+ykhR3NTARhNfF16E6jHBVy4F7EB5WhlVDsy/Xfg==
-
 array-union@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/array-union/-/array-union-1.0.2.tgz#9a34410e4f4e3da23dea375be5be70f24778ec39"
