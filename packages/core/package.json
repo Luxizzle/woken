@@ -1,6 +1,6 @@
 {
   "name": "@woken/core",
-  "version": "0.0.2-alpha.6",
+  "version": "0.0.2-alpha.7",
   "description": "core",
   "license": "MIT",
   "author": {
@@ -21,7 +21,7 @@
     "dist/"
   ],
   "devDependencies": {
-    "@woken/tsconfig": "^0.0.2-alpha.5",
+    "@woken/tsconfig": "^0.0.2-alpha.7",
     "typescript": "^3.2.2"
   },
   "gitHead": "283a3e50964b41b00dac72d507489bdce9326047"
