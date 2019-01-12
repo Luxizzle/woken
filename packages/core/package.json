@@ -20,5 +20,6 @@
     "@luxizzle/tsconfig": "^0.0.1",
     "del": "^3.0.0",
     "typescript": "^3.2.2"
-  }
+  },
+  "gitHead": "16fae7fab6d39a686562edb6b79322d3a05dcc7f"
 }
