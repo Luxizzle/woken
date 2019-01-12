@@ -22,9 +22,9 @@
     "dist/"
   ],
   "devDependencies": {
-    "@luxizzle/tsconfig": "^0.0.1",
+    "@woken/tsconfig": "^0.0.2-alpha.5",
     "del": "^3.0.0",
     "typescript": "^3.2.2"
   },
-  "gitHead": "883058cd926a93b3e2c88080add626a14ff3a527"
+  "gitHead": "283a3e50964b41b00dac72d507489bdce9326047"
 }

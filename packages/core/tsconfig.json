@@ -1,7 +1,7 @@
 {
-  "extends": "@luxizzle/tsconfig",
-  "include": [" ./**/*.ts"],
-  "exclude": ["node_modules"],
+  "extends": "@woken/tsconfig",
+  "include": [" **/*.ts", "src/index.ts"],
+  "exclude": ["node_modules/*"],
   "compilerOptions": {
     "outDir": "dist"
   }
