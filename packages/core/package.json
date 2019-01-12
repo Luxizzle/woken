@@ -13,6 +13,9 @@
     "build": "npm run clean && tsc",
     "clean": "del dist"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist/"
   ],
@@ -21,5 +24,5 @@
     "del": "^3.0.0",
     "typescript": "^3.2.2"
   },
-  "gitHead": "16fae7fab6d39a686562edb6b79322d3a05dcc7f"
+  "gitHead": "883058cd926a93b3e2c88080add626a14ff3a527"
 }

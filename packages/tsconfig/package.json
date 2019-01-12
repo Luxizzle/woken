@@ -9,5 +9,8 @@
   },
   "files": [
     "tsconfig.json"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
