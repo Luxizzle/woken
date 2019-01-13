@@ -1,6 +1,11 @@
 {
   "name": "root",
   "devDependencies": {
-    "lerna": "^3.9.0"
+    "gulp": "^4.0.0",
+    "gulp-typescript": "^5.0.0",
+    "lerna": "^3.9.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
   }
 }

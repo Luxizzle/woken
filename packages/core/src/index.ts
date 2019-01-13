@@ -1,3 +1,2 @@
-export default function() {
-  console.log('test edit more moooore');
-}
+export { Core as default } from './Core';
+export * from './services';

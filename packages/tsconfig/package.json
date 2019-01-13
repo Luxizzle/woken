@@ -1,12 +1,13 @@
 {
   "name": "@woken/tsconfig",
   "version": "0.0.2-alpha.7",
-  "description": "Shared config for my projects",
+  "description": "Shared config for woken projects",
   "license": "MIT",
   "author": {
     "email": "hi@lux.moe",
     "name": "Lux Pandora"
   },
+  "homepage": "https://github.com/Luxizzle/woken/packages/tsconfig#readme",
   "files": [
     "tsconfig.json"
   ],
