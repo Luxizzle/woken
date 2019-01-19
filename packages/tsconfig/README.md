@@ -1,1 +1,0 @@
-# Shared typescript config

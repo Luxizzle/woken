@@ -1,6 +1,0 @@
-{
-  "extends": "@woken/tsconfig",
-  "compilerOptions": {
-    "declaration": false
-  }
-}

@@ -1,8 +1,7 @@
 {
-  "extends": "@woken/tsconfig",
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules/*"],
+  "extends": "../tsconfig.settings.json",
   "compilerOptions": {
+    "rootDir": "src",
     "outDir": "dist"
   }
 }

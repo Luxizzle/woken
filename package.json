@@ -1,11 +1,20 @@
 {
-  "name": "root",
-  "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-typescript": "^5.0.0",
-    "lerna": "^3.9.0",
-    "typescript": "^3.2.2"
+  "name": "woken-root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "tsc",
+    "clean": "rimraf packages/**/dist"
   },
-  "dependencies": {
-  }
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "ava": "^1.1.0",
+    "lerna": "^3.10.6",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {},
+  "workspaces": [
+    "packages/*"
+  ]
 }

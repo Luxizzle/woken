@@ -1,0 +1,4 @@
+{
+  "references": [{ "path": "core" }],
+  "compilerOptions": { "noEmit": true }
+}
