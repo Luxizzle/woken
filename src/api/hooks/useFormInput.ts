@@ -1,5 +1,16 @@
 import { useState, ChangeEvent } from 'react';
 
+/**
+ *
+ * Example:
+ *
+ * ```tsx
+ * const [name, nameFormHandler] = useFormInput('Lux')
+ *
+ * <p>{name}</p>
+ * <input {...nameFormHandler} />
+ * ```
+ */
 export default function useFormInput(
   initialState: string
 ): [

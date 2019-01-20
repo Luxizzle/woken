@@ -4,34 +4,27 @@ import {
   createHistory,
   createMemorySource,
   LocationProvider,
+  Link,
 } from '@reach/router';
-import MainMenu from './screens/MainMenu';
 import Layout from './components/Layout';
-import { useLocalStorage } from './api/hooks/useLocalStorage';
-import useFormInput from './api/hooks/useFormInput';
+import MainMenu from './screens/MainMenu';
+import HookTests from './screens/HookTests';
 
 // We fake history, so we dont alter the actual location
 const history = createHistory(createMemorySource('/main-manu'));
 
 const App = () => {
-  const [name, setName] = useLocalStorage<string>('user.name');
-  const [other, otherHandler] = useFormInput('');
-
   return (
     <LocationProvider history={history}>
       <Layout>
-        <Router>
-          <MainMenu default path="/main-menu" />
-        </Router>
         <div>
-          <p>{name || 'No name set'}</p>
-          <input
-            value={name || ''}
-            onChange={event => setName(event.target.value)}
-          />
-          <p>{other || 'No other set'}</p>
-          <input {...otherHandler} />
+          <Link to="/">Home</Link>
+          <Link to="/debug/hook-tests">Hook Tests</Link>
         </div>
+        <Router>
+          <MainMenu default path="/" />
+          <HookTests path="/debug/hook-tests" />
+        </Router>
       </Layout>
     </LocationProvider>
   );
