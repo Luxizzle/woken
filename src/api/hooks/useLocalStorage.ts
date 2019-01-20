@@ -22,7 +22,10 @@ export function useLocalStorage<Type>(
   defaultValue?: Type | null
 ): [Type | null, (newValue: Type | null) => void] {
   let initialValue = db.get(key).value();
-  if (!initialValue) initialValue = defaultValue;
+  if (!initialValue) {
+    initialValue = defaultValue;
+    db.set(key, initialValue).write();
+  }
 
   const [value, setStateValue] = useState<Type | null>(initialValue);
 

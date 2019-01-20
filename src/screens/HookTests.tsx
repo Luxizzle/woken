@@ -4,8 +4,8 @@ import { useLocalStorage } from '../api/hooks/useLocalStorage';
 import useFormInput from '../api/hooks/useFormInput';
 
 const HookTests = (_props: RouteComponentProps) => {
-  const [name, setName] = useLocalStorage<string>('user.name');
-  const [other, otherHandler] = useFormInput('Lux');
+  const [name, setName] = useLocalStorage<string>('user.name', 'Jelmer');
+  const [other, otherHandler] = useFormInput('Lux Pandora');
 
   return (
     <div>
