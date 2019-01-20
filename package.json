@@ -2,25 +2,31 @@
   "name": "woken-root",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna clean -y && lerna link && lerna bootstrap",
-    "build": "tsc -b packages/tsconfig.json",
-    "build:dev": "npm run build -- --watch",
+    "build": "webpack",
+    "build:dev": "webpack-dev-server --progress",
     "clean": "rimraf dist/"
   },
   "devDependencies": {
+    "@types/lowdb": "^1.0.6",
     "@types/node": "^10.12.18",
-    "ava": "^1.1.0",
-    "rimraf": "^2.6.3",
-    "typescript": "^3.2.4",
+    "@types/reach__router": "^1.2.3",
     "@types/react": "^16.7.20",
     "@types/react-dom": "^16.0.11",
-    "thread-loader": "^2.1.1",
+    "@types/styled-components": "^4.1.6",
+    "html-webpack-plugin": "^3.2.0",
+    "rimraf": "^2.6.3",
+    "sass-loader": "^7.1.0",
     "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
+    "@reach/router": "^1.2.1",
+    "lowdb": "^1.0.0",
     "react": "^16.8.0-alpha.1",
-    "react-dom": "^16.8.0-alpha.1"
+    "react-dom": "^16.8.0-alpha.1",
+    "styled-components": "^4.1.3"
   }
 }
