@@ -9,13 +9,19 @@ const HookTests = (_props: RouteComponentProps) => {
 
   return (
     <div>
-      <p>{name || 'No name set'}</p>
-      <input
-        value={name || ''}
-        onChange={event => setName(event.target.value)}
-      />
-      <p>{other || 'No other set'}</p>
-      <input {...otherHandler} />
+      <label>
+        LocalStorage{' '}
+        <input
+          id="localstorage"
+          value={name || ''}
+          onChange={event => setName(event.target.value)}
+        />{' '}
+        {name || 'None'}
+      </label>
+      <hr />
+      <label>
+        useFormInput <input {...otherHandler} /> {other || 'None'}
+      </label>
     </div>
   );
 };
