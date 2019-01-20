@@ -2,19 +2,25 @@
   "name": "woken-root",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "build": "tsc",
-    "clean": "rimraf packages/**/dist"
+    "bootstrap": "lerna clean -y && lerna link && lerna bootstrap",
+    "build": "tsc -b packages/tsconfig.json",
+    "build:dev": "npm run build -- --watch",
+    "clean": "rimraf dist/"
   },
   "devDependencies": {
     "@types/node": "^10.12.18",
     "ava": "^1.1.0",
-    "lerna": "^3.10.6",
     "rimraf": "^2.6.3",
-    "typescript": "^3.2.4"
+    "typescript": "^3.2.4",
+    "@types/react": "^16.7.20",
+    "@types/react-dom": "^16.0.11",
+    "thread-loader": "^2.1.1",
+    "ts-loader": "^5.3.3",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
   },
-  "dependencies": {},
-  "workspaces": [
-    "packages/*"
-  ]
+  "dependencies": {
+    "react": "^16.8.0-alpha.1",
+    "react-dom": "^16.8.0-alpha.1"
+  }
 }
